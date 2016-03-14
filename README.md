@@ -9,6 +9,7 @@ Summernote Plugin for elFinder File Manager
     <script src="path/to/plugin/summernote-ext-elfinder/summernote-ext-elfinder.js"></script>
     ```
 
+- Change the Value of the URL at the elFinder Callback file. Replace it with your elfinder connector url.
 - Include the summernote callback javascript into your html page.
 
     ```javascript
