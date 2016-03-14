@@ -1,2 +1,2 @@
-# summernote-ext-elfinder
+# Summernote Plugin elFinder
 Summernote Plugin for elFinder File Manager
