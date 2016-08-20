@@ -9,12 +9,6 @@ Summernote Plugin for elFinder File Manager
     <script src="path/to/plugin/summernote-ext-elfinder/summernote-ext-elfinder.js"></script>
     ```
 
-- Change the Value of the URL at the elFinder Callback file. Replace it with your elfinder connector url.
-- Include the summernote callback javascript into your html page.
-
-    ```javascript
-    <script src="path/to/plugin/summernote-ext-elfinder/elfinder-callback.js"></script>
-    ```
 
 - Initialize the plugin at your summernote initialization code.
 
@@ -30,6 +24,26 @@ Summernote Plugin for elFinder File Manager
             ]
         });
       });
+    function elfinderDialog() {
+	var fm = $('<div/>').dialogelfinder({
+	url : 'https://path.to/your/connector.php', // change with the url of your connector
+	lang : 'en',
+	width : 840,
+	height: 450,
+	destroyOnClose : true,
+	getFileCallback : function(files, fm) {
+	console.log(files);
+	$('.editor').summernote('editor.insertImage', files.url);
+	},
+	commandsOptions : {
+	getfile : {
+	    oncomplete : 'close',
+	    folders : false
+	}
+	}
+
+	}).dialogelfinder('instance');
+    }
     </script>
     ```
 
