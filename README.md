@@ -47,9 +47,9 @@ Summernote Plugin for elFinder File Manager
     ```
 
 ## Tested with
-- Summernote : master branch (after v0.8.1)
-- elFinder : 2.1.9
-- Bootstrap : v3.3.6
+- Summernote : master branch (after v0.8.12)
+- elFinder : 2.1.51
+- Bootstrap : v3.4.1
 - jQuery : 1.12.1
 - jQuery-UI : 1.11.4
 
